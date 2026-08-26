@@ -2,172 +2,97 @@
 
 /*
    StyleSheet 
-   Author: Li Juan
-   Date:   6 August 2021
-   
+   Updated: 2026 (Internship Ready!)
    Filename: stylesheet.css
-
 */
 
+/* 1. Import a modern, clean font (Inter) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
 /* Body Styles */
-html {
-  background: linear-gradient(345deg, rgba(151,150,240,1) 0%, rgba(251,199,212,1) 100%);
-}
-
 body {
-   margin-left: auto;
-   margin-right: auto;
-   max-width: 1050px;
-   width: auto;
-   
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fc; /* Soft, professional off-white/gray */
+    color: #333333;
+    /* Removed the heavy side shadows and fixed width so it's fully responsive! */
 }
 
-body {
-    background-color: #FFF0F5;
-    box-shadow: rgb(51, 51, 51) 15px 0px 25px,
-                rgb(51, 51, 51) -15px 0px 25px;
-  }
-
-  
-  
-/* Carousel styles */
-  .carousel {
-    margin-top: 20px;
-  }
-
-  .carousel-item {
-    text-align: center;
-    min-height: 280px;
-    /* Prevent carousel from being distorted if for some reason image doesn't load */
-  }
-
-
-
-  /* Figure Box Styles */
-  figure {
-    border-left: 1px solid rgb(51, 51, 51);
-    border-right: 1px solid rgb(51, 51, 51);
-    border: 4px double rgb(51, 51, 51);
-    margin: 20px auto 0px;
-  }
-
-  figure img {
-    display: block;
-    width: 100%;
-    filter: saturate(1.8) contrast(0.8);
-  }
-
-  figure figcaption {
-    background-color: white;
-    font-family: 'Palatino Linotype', Palatino, 'Times New Roman', serif;
-    font-style: italic;
-    padding: 10px 0;
-    text-align: center;
-  }
-
-
-
- /* Horizontal Navigation Styles */
- .navbar {
-    background: #37474f;
-  }
-  .navbar-light .navbar-brand {
-    color: #766161;
-  }
-
-  /* Foooter */
-  .page-footer{
-    background-color: #90a4ae;
+/* 2. Soft, Modern Shadows for Sections */
+.shadow-sm {
+    box-shadow: 0 8px 24px rgba(149, 157, 165, 0.1) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.02);
 }
 
+/* Subtle hover effect for your intro/about boxes */
+.hero-section:hover, .bg-white:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(149, 157, 165, 0.15) !important;
+}
 
-
-/* Back to Top button style */
+/* 3. Modernized Back to Top Button */
 .back-to-top {
-  background-color: #000000;
-  color: #FFFFFF;
-  opacity: 0;
-  transition: opacity .6s ease-in-out;
-  z-index: 999;
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  width: 50px;
-  height: 50px;
-  box-sizing: border-box;
-  border-radius: 0%;
+    background: linear-gradient(135deg, #2b2b2b 0%, #000000 100%);
+    color: #FFFFFF !important;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Made it a sleek circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
 }
 
-a.back-to-top {
-  font-weight: 1000;
-  letter-spacing: 2px;
-  font-size: 14px;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 1.6;
-  padding-left: 2px;
-  padding-top: 14px;
+/* Add the FontAwesome up arrow to the button */
+.back-to-top::after {
+    content: '\f077'; 
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 18px;
 }
 
-.back-to-top:hover, .back-to-top:focus, .back-to-top:visited {
-  color: #FFFFFF;
+.back-to-top:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
 }
 
 .back-to-top.show {
-  opacity: 1;
+    opacity: 1;
+    visibility: visible;
 }
 
+/* 4. Keep your Slider Styles (Just cleaned them up a bit!) */
+.slidecontainer { width: 100%; }
 
-/* Range Slider */
-.slidecontainer {
-  width: 100%; /* Width of the outside container */
-}
-
-/* The slider itself */
 .slider {
-  -webkit-appearance: none;  /* Override default CSS styles */
-  appearance: none;
-  width: 100%; /* Full-width */
-  height: 25px; /* Specified height */
-  background: #d3d3d3; /* Grey background */
-  outline: none; /* Remove outline */
-  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-  transition: opacity .2s;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px; /* Thinner, more modern track */
+    border-radius: 5px;  
+    background: #e0e0e0;
+    outline: none;
+    opacity: 0.8;
+    transition: opacity .2s;
 }
 
-/* Mouse-over effects */
-.slider:hover {
-  opacity: 1; /* Fully shown on mouse-over */
-}
+.slider:hover { opacity: 1; }
 
-/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
-.slider {
-  -webkit-appearance: none;
-  width: 100%;
-  height: 15px;
-  border-radius: 5px;  
-  background: #d3d3d3;
-  outline: none;
-  opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
-}
-
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%; 
-  background: #0077b6;
-  cursor: pointer;
-}
-
-.slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #0077b6;
-  cursor: pointer;
+.slider::-webkit-slider-thumb, .slider::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%; 
+    background: #007bff; /* Bootstrap Primary Blue */
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Added slight shadow to the thumb */
 }
