@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
-  
+
   <!-- Custom CSS -->
   <link href="CSS/stylesheet.css" rel="stylesheet" />
 </head>
@@ -39,48 +39,106 @@
 
   <!-- MAIN CONTENT -->
   <div class="container mt-5">
-    
+
     <!-- Header & Resume Download -->
     <div class="d-flex justify-content-between align-items-center border-bottom pb-3 mb-5">
-      <h1 class="display-5 font-weight-bold"><i class="fas fa-briefcase text-primary mr-3"></i>Experience & Education</h1>
+      <h1 class="display-5 font-weight-bold"><i class="fas fa-briefcase text-primary mr-3"></i>Experience & Education
+      </h1>
       <a href="ChiaLiJuan_Resume.pdf" target="_blank" class="btn btn-primary btn-lg shadow-sm">
-  <i class="fas fa-file-download mr-2"></i> Download Resume
-</a>
+        <i class="fas fa-file-download mr-2"></i> Download Resume
+      </a>
     </div>
 
     <div class="row">
       <!-- LEFT COLUMN: Education & Certs -->
       <div class="col-lg-6 mb-4">
-        
+
         <h3 class="font-weight-bold mb-4"><i class="fas fa-graduation-cap text-secondary mr-2"></i>Education</h3>
-        
+
         <!-- DigiPen -->
-        <div class="card shadow-sm mb-4 border-0">
+        <div class="card shadow-sm mb-4 border-0 border-left-primary"
+          style="border-left: 4px solid #c8102e !important;"> <!-- Used DigiPen's red for a nice touch! -->
           <div class="card-body">
             <h5 class="card-title font-weight-bold mb-1">SIT-DigiPen Institute of Technology</h5>
-            <h6 class="text-primary font-weight-bold">BSc Computer Science in Interactive Media & Game Development</h6>
-            <p class="text-muted small mb-2"><i class="far fa-calendar-alt mr-1"></i> 202X - Present</p>
-            <p class="card-text">Focusing on game engine architecture, data-driven systems, and user experience (UX) research.</p>
+            <h6 class="text-primary font-weight-bold">BSc (Hons) Computer Science in Interactive Media & Game
+              Development</h6>
+            <p class="text-muted small mb-2"><i class="far fa-calendar-alt mr-1"></i> 2023 - Present</p>
+
+            <p class="card-text mb-3">
+              A rigorous four-year direct honours program blending software engineering, mathematics, and design theory.
+              Well-versed in game logic, system design, data structures, and creating data-driven user experiences.
+            </p>
+
+            <!-- Overseas Immersion Highlight -->
+            <div class="alert alert-info py-2 px-3 mb-3"
+              style="background-color: #f0f8ff; border-color: #b8daff; color: #004085;">
+              <strong><i class="fas fa-globe-europe mr-1"></i> Overseas Immersion Programme (Spain):</strong>
+              Studied for one trimester at the Europe-Bilbao campus. Engaged in cross-cultural technical collaboration,
+              attended global industry seminars, and adapted to international development workflows.
+            </div>
+
+            <!-- Relevant Coursework (Badges) -->
+            <h6 class="font-weight-bold text-dark mt-3 mb-2" style="font-size: 0.9rem;">Highly Relevant Coursework:</h6>
+            <div class="d-flex flex-wrap">
+              <span class="badge badge-light border mr-2 mb-2 p-2">UI & UX Design</span>
+              <span class="badge badge-light border mr-2 mb-2 p-2">Introduction to Psychology</span>
+              <span class="badge badge-light border mr-2 mb-2 p-2">Probability & Statistics</span>
+              <span class="badge badge-light border mr-2 mb-2 p-2">Machine Learning & AI</span>
+              <span class="badge badge-light border mr-2 mb-2 p-2">System Design Methods</span>
+              <span class="badge badge-light border mr-2 mb-2 p-2">Algorithm Analysis</span>
+            </div>
           </div>
         </div>
 
         <!-- Poly -->
-        <div class="card shadow-sm mb-4 border-0">
+        <div class="card shadow-sm mb-4 border-0 border-left-primary" style="border-left: 4px solid #d32f2f !important;"> <!-- Added SP's signature red! -->
           <div class="card-body">
             <h5 class="card-title font-weight-bold mb-1">Singapore Polytechnic</h5>
             <h6 class="text-primary font-weight-bold">Diploma in Information Technology</h6>
-            <p class="text-muted small mb-2"><i class="far fa-calendar-alt mr-1"></i> Graduated: 202X</p>
-            <p class="card-text">Specialized in Immersive Simulation. Built foundational programming skills and developed VR games using Unity.</p>
+            <p class="text-muted small mb-3"><i class="far fa-calendar-alt mr-1"></i> Apr 2021 - Mar 2024</p>
+            
+            <p class="card-text mb-2">
+              <strong>Specialist Track:</strong> Immersive Simulation
+            </p>
+            
+            <!-- Skill Badges -->
+            <h6 class="font-weight-bold text-dark mt-3 mb-2" style="font-size: 0.9rem;">Professional Development & Coursework:</h6>
+            <div class="d-flex flex-wrap">
+              <span class="badge badge-light border mr-2 mb-2 p-2">User Interface Design</span>
+              <span class="badge badge-light border mr-2 mb-2 p-2">Web Development</span>
+              <span class="badge badge-light border mr-2 mb-2 p-2">Mobile App Dev</span>
+              <span class="badge badge-light border mr-2 mb-2 p-2">JavaScript</span>
+              <span class="badge badge-light border mr-2 mb-2 p-2">HTML & CSS</span>
+              <span class="badge badge-light border mr-2 mb-2 p-2">Unity & C#</span>
+              <span class="badge badge-light border mr-2 mb-2 p-2">Blender</span>
+              <span class="badge badge-light border mr-2 mb-2 p-2">SQL</span>
+              <span class="badge badge-light border mr-2 mb-2 p-2">AWS</span>
+            </div>
           </div>
         </div>
 
         <!-- ITE -->
-        <div class="card shadow-sm mb-5 border-0">
+        <div class="card shadow-sm mb-5 border-0 border-left-primary" style="border-left: 4px solid #0047BB !important;"> <!-- ITE Signature Blue -->
           <div class="card-body">
             <h5 class="card-title font-weight-bold mb-1">ITE College West</h5>
             <h6 class="text-primary font-weight-bold">Higher NITEC in Mechatronics Engineering</h6>
-            <p class="text-muted small mb-2"><i class="far fa-calendar-alt mr-1"></i> Graduated: 202X</p>
-            <p class="card-text">Gained hands-on experience in hardware systems, robotics, and logical engineering principles.</p>
+            <!-- Make sure to adjust these dates to match your actual timeline! -->
+            <p class="text-muted small mb-3"><i class="far fa-calendar-alt mr-1"></i> Apr 2019 - Mar 2021</p> 
+            
+            <p class="card-text mb-2">
+              Built a strong foundation in hardware engineering, systems logic, and automated robotics.
+            </p>
+            
+            <!-- Skill Badges -->
+            <h6 class="font-weight-bold text-dark mt-3 mb-2" style="font-size: 0.9rem;">Professional Development & Coursework:</h6>
+            <div class="d-flex flex-wrap">
+              <span class="badge badge-light border mr-2 mb-2 p-2">Program Logic Control (PLC)</span>
+              <span class="badge badge-light border mr-2 mb-2 p-2">Arduino</span>
+              <span class="badge badge-light border mr-2 mb-2 p-2">Robotics</span>
+              <span class="badge badge-light border mr-2 mb-2 p-2">Electronics</span>
+              <span class="badge badge-light border mr-2 mb-2 p-2">Pneumatics</span>
+              <span class="badge badge-light border mr-2 mb-2 p-2">Mechanical Systems</span>
+            </div>
           </div>
         </div>
 
@@ -88,10 +146,21 @@
         <h3 class="font-weight-bold mb-4"><i class="fas fa-certificate text-secondary mr-2"></i>Certifications</h3>
         <ul class="list-group shadow-sm mb-5">
           <li class="list-group-item border-0 border-bottom">
-            <strong>[Name of LinkedIn/Tech Cert]</strong> - <span class="text-muted">LinkedIn Learning (202X)</span>
+            <strong>Careers in the Game Industry</strong> - <span class="text-muted">LinkedIn Learning (2024)</span>
           </li>
           <li class="list-group-item border-0 border-bottom">
-            <strong>[Another Tech Cert]</strong> - <span class="text-muted">Provider (202X)</span>
+            <strong>Cert Prep: Unity Certified Associate
+              Game Developer UI and 2D Games
+              Cert Prep: Unity Certified Associate
+              Game Developer UI and 2D Game</strong> - <span class="text-muted">LinkedIn Learning (2024)</span>
+          </li>
+          <li class="list-group-item border-0 border-bottom">
+            <strong>Gamification of Learning
+            </strong> - <span class="text-muted">LinkedIn Learning (2024)</span>
+          </li>
+          <li class="list-group-item border-0 border-bottom">
+            <strong>Unreal Engine 5 Essential Training
+            </strong> - <span class="text-muted">LinkedIn Learning (2024)</span>
           </li>
         </ul>
 
@@ -99,11 +168,12 @@
 
       <!-- RIGHT COLUMN: Work Experience -->
       <div class="col-lg-6">
-        
+
         <h3 class="font-weight-bold mb-4"><i class="fas fa-laptop-code text-secondary mr-2"></i>Work Experience</h3>
 
         <!-- Job 1 -->
-        <div class="card shadow-sm mb-4 border-0 border-left-primary" style="border-left: 4px solid #007bff !important;">
+        <div class="card shadow-sm mb-4 border-0 border-left-primary"
+          style="border-left: 4px solid #007bff !important;">
           <div class="card-body">
             <h5 class="card-title font-weight-bold mb-1">[Your Job Title / Intern Role]</h5>
             <h6 class="text-primary font-weight-bold">[Company Name]</h6>
@@ -117,7 +187,8 @@
         </div>
 
         <!-- Job 2 -->
-        <div class="card shadow-sm mb-4 border-0 border-left-primary" style="border-left: 4px solid #007bff !important;">
+        <div class="card shadow-sm mb-4 border-0 border-left-primary"
+          style="border-left: 4px solid #007bff !important;">
           <div class="card-body">
             <h5 class="card-title font-weight-bold mb-1">[Previous Job Title]</h5>
             <h6 class="text-primary font-weight-bold">[Company Name]</h6>
@@ -138,7 +209,8 @@
   <footer class="bg-dark text-white text-center py-4 mt-5">
     <div class="container">
       <p class="mb-0">© 2026 Designed & Built by Li Juan</p>
-      <small class="text-muted">Feel free to connect with me via the <a href="contact.html" class="text-light text-decoration-underline">Contact page</a>!</small>
+      <small class="text-muted">Feel free to connect with me via the <a href="contact.html"
+          class="text-light text-decoration-underline">Contact page</a>!</small>
     </div>
   </footer>
 
@@ -147,4 +219,5 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
