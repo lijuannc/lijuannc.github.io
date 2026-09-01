@@ -2,17 +2,64 @@
 <html lang="en">
 
 <head>
-  <title>Skills</title>
+  <title>Skills & Proficiencies | Li Juan</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap & Icons -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
   
   <!-- Custom CSS -->
   <link href="CSS/stylesheet.css" rel="stylesheet" />
+
+  <style>
+    /* Custom styling to match your Canva design perfectly */
+    .skills-page-bg {
+      background-color: #f4f1ea; /* The cream/beige background from your image */
+      min-height: 80vh;
+      padding-top: 40px;
+      padding-bottom: 60px;
+    }
+    .skills-header {
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: #333333;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+    }
+    .skill-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 25px;
+    }
+    .skill-icon-wrapper {
+      width: 50px;
+      height: 50px;
+      border: 2px solid #8b735f; /* Earthy brown border */
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      color: #8b735f;
+      flex-shrink: 0;
+      margin-right: 15px;
+    }
+    .skill-title {
+      font-weight: 600;
+      color: #333333;
+      margin-bottom: 2px;
+      text-transform: uppercase;
+      font-size: 1rem;
+    }
+    .skill-desc {
+      color: #8b735f;
+      font-size: 0.95rem;
+      margin-bottom: 0;
+    }
+  </style>
 </head>
 
 <body>
@@ -36,21 +83,134 @@
     </nav>
   </header>
 
-  <!-- MAIN CONTENT FRAMEWORK -->
-  <div class="container mt-5" style="min-height: 60vh;">
-    <div class="row mb-5 bg-white shadow-sm p-4 rounded">
-      <div class="col-12">
-        <h2 class="font-weight-bold mb-4 border-bottom pb-2">Skills</h2>
+  <!-- MAIN CONTENT -->
+  <div class="skills-page-bg">
+    <div class="container">
+      <div class="row">
         
-        <!-- You will put your ITE, Poly, and DigiPen timelines here later -->
-        <p class="text-muted">Content coming soon...</p>
-        
+        <!-- LEFT COLUMN: TECHNICAL SKILLS -->
+        <div class="col-md-6 mb-5 mb-md-0">
+          <h4 class="skills-header">Technical Skills</h4>
+          
+          <div class="skill-item">
+            <div class="skill-icon-wrapper"><i class="fas fa-globe"></i></div>
+            <div>
+              <h6 class="skill-title">Website & Mobile Development</h6>
+              <p class="skill-desc">Learned Frontend, Backend, React, HTML/CSS & created web apps</p>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-icon-wrapper"><i class="fas fa-gamepad"></i></div>
+            <div>
+              <h6 class="skill-title">Unity & C/C++</h6>
+              <p class="skill-desc">Learned to create VR/AR games and custom game engines</p>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-icon-wrapper"><i class="fas fa-cube"></i></div>
+            <div>
+              <h6 class="skill-title">Blender</h6>
+              <p class="skill-desc">Learned 3D modeling & character design</p>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-icon-wrapper"><i class="fas fa-database"></i></div>
+            <div>
+              <h6 class="skill-title">SQL Server & Data Analytics</h6>
+              <p class="skill-desc">Learned MySQL/Microsoft SQL, Probability, Statistics & Machine Learning</p>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-icon-wrapper"><i class="fab fa-js-square"></i></div>
+            <div>
+              <h6 class="skill-title">JavaScript & Python</h6>
+              <p class="skill-desc">Learned JS and Python programming for logic and data</p>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-icon-wrapper"><i class="fas fa-microchip"></i></div>
+            <div>
+              <h6 class="skill-title">Hardware & Systems</h6>
+              <p class="skill-desc">Program Logic Control (PLC), Arduino, Robotics & Mechatronics</p>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-icon-wrapper"><i class="fas fa-pencil-alt"></i></div>
+            <div>
+              <h6 class="skill-title">UI/UX & Drawing</h6>
+              <p class="skill-desc">UI/UX principles, psychology, and 2D digital art</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN: SOFTSKILLS -->
+        <div class="col-md-6">
+          <h4 class="skills-header">Softskills</h4>
+          
+          <div class="skill-item">
+            <div class="skill-icon-wrapper"><i class="fas fa-comments"></i></div>
+            <div>
+              <h6 class="skill-title">Communication</h6>
+              <p class="skill-desc">Effective and clear communication across multidisciplinary teams</p>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-icon-wrapper"><i class="fas fa-language"></i></div>
+            <div>
+              <!-- Note: I fixed the "LANGUGAE" typo from the original image here! -->
+              <h6 class="skill-title">Language</h6>
+              <p class="skill-desc">Fluent in English & Chinese</p>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-icon-wrapper"><i class="fas fa-project-diagram"></i></div>
+            <div>
+              <h6 class="skill-title">Project Management / Scrum</h6>
+              <p class="skill-desc">Assisted & handled agile project pipelines</p>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-icon-wrapper"><i class="fas fa-brain"></i></div>
+            <div>
+              <h6 class="skill-title">Critical Thinking</h6>
+              <p class="skill-desc">Learned to analyze information thoughtfully and logically</p>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-icon-wrapper"><i class="fas fa-lightbulb"></i></div>
+            <div>
+              <h6 class="skill-title">Analytical Thinking</h6>
+              <p class="skill-desc">Learned to analyze complex problems and seek data-driven solutions</p>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-icon-wrapper"><i class="fas fa-sync-alt"></i></div>
+            <div>
+              <h6 class="skill-title">Adaptability</h6>
+              <p class="skill-desc">Quick to adapt to changes, new environments, and new tech stacks</p>
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </div>
   </div>
 
   <!-- FOOTER -->
-  <footer class="bg-dark text-white text-center py-4 mt-5">
+  <footer class="bg-dark text-white text-center py-4">
     <div class="container">
       <p class="mb-0">© 2026 Designed & Built by Li Juan</p>
       <small class="text-muted">Feel free to connect with me via the <a href="contact.html" class="text-light text-decoration-underline">Contact page</a>!</small>
