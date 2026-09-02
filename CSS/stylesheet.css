@@ -12,9 +12,8 @@
 /* Body Styles */
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #f8f9fc; /* Soft, professional off-white/gray */
+    background-color: #f4f1ea; /* Warm cream color */
     color: #333333;
-    /* Removed the heavy side shadows and fixed width so it's fully responsive! */
 }
 
 /* 2. Soft, Modern Shadows for Sections */
